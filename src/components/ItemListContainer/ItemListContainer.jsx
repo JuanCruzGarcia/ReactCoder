@@ -5,5 +5,4 @@ const ItemListContainer = (props) => {
         <h2>{props.greeting}</h2>
     )
 }
-
 export default ItemListContainer
