@@ -9,11 +9,21 @@ const ItemList = [
 	{ nombre: 'Contacto', enlace: '/contacto' },
 ]
 
+const arrayProductos = [
+  {nombre:'Remera', stock:'3'},
+  {nombre:'Pantalon', stock:'5'},
+  {nombre:'Hoodie', stock:'4'},
+]
+
+const inicial=(1)
+
 function App() {
+
   return (
     <>
     <NavBar data={ItemList} />
-    <ItemListContainer greeting="Estamos Trabajando en la Pagina"/>
+    <ItemListContainer greeting="Estamos Trabajando en la Pagina" arrayProductos={arrayProductos} inicial={inicial}/>
+    
     </>
     
   );

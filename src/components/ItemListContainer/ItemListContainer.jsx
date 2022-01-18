@@ -1,8 +1,16 @@
-import React from "react"
+import React from 'react'
+import ItemCount from '../ItemCount/ItemCount'
 
-const ItemListContainer = (props) => {
+const ItemListContainer = ({greeting, arrayProductos, inicial}) => {
+
+    
+
     return (
-        <h2>{props.greeting}</h2>
+        <>
+            <h2> {greeting} </h2>
+            {arrayProductos.map(item => <ItemCount stock={item.stock} nombre={item.nombre} inicial={inicial} />)}
+        </>
     )
 }
+
 export default ItemListContainer
