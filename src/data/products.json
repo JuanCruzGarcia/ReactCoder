@@ -1,0 +1,42 @@
+[
+    {
+        "id" : "000",
+        "title" : "Remera Overzide",
+        "price" : "80",
+        "category" : "remera",
+        "description" : "Remera Overzide Fear of God Essentials",
+        "image" : "https://images.stockx.com/images/Fear-of-God-Essentials-Core-Collection-T-shirt-Stretch-Limo.jpg?fit=fill&bg=FFFFFF&w=480&h=320&auto=compress&q=90&dpr=1&trim=color&updated_at=1639003330&fm=webp",
+        "initial" : 1,
+        "stock" : 8
+    },
+    {
+        "id" : "001",
+        "title" : "Hoodie Overzide",
+        "price" : "100",
+        "category" : "hoodie",
+        "description" : "Hoodie Fear of God Essentials",
+        "image" : "https://images.stockx.com/images/Fear-of-God-Essentials-Core-Collection-Pullover-Hoodie-Dark-Heather-Oatmeal.jpg?fit=fill&bg=FFFFFF&w=480&h=320&auto=compress&q=90&dpr=1&trim=color&updated_at=1639003324&fm=webp",
+        "initial" : 1,
+        "stock" : 10
+    },
+    {
+        "id" : "002",
+        "title" : "Pantalon",
+        "price" : "150",
+        "category" : "pantalon",
+        "description" : "Pantalon Fear of God Essentials",
+        "image" : "https://images.stockx.com/images/Fear-of-God-Essentials-Core-Collection-Kids-Sweatpant-String.jpg?fit=fill&bg=FFFFFF&w=480&h=320&auto=compress&q=90&dpr=1&trim=color&updated_at=1639004838&fm=webp",
+        "initial" : 1,
+        "stock" : 9
+    },
+    {
+        "id" : "003",
+        "title" : "Campera Supreme",
+        "price" : "600",
+        "category" : "campera",
+        "description" : "Supreme The North Face",
+        "image" : "https://images.stockx.com/images/Supreme-The-North-Face-Bleached-Denim-Print-Nuptse-Jacket-Black.jpg?fit=fill&bg=FFFFFF&w=480&h=320&auto=compress&q=90&dpr=1&trim=color&updated_at=1639681104&fm=webp",
+        "initial" : 1,
+        "stock" : 5
+    }
+]

@@ -1,31 +1,16 @@
 import './App.css';
-import NavBar from './components/NavBar/NavBar'
-import ItemListContainer from './components/ItemListContainer/ItemListContainer'
-
-
-const ItemList = [
-	{ nombre: 'Inicio', enlace: '/' },
-	{ nombre: 'Productos', enlace: '/productos' },
-	{ nombre: 'Contacto', enlace: '/contacto' },
-]
-
-const arrayProductos = [
-  {nombre:'Remera', stock:'3'},
-  {nombre:'Pantalon', stock:'5'},
-  {nombre:'Hoodie', stock:'4'},
-]
-
-const inicial=(1)
+import 'bootstrap/dist/css/bootstrap.min.css';
+import NavBar from './components/NavBar/NavBar';
+import ItemListContainer from './components/ItemListContainer/ItemListContainer';
+import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
 
 function App() {
-
   return (
-    <>
-    <NavBar data={ItemList} />
-    <ItemListContainer greeting="Estamos Trabajando en la Pagina" arrayProductos={arrayProductos} inicial={inicial}/>
-    
-    </>
-    
+    <div className="App">
+      <NavBar />
+      <ItemDetailContainer/>
+      {/* <ItemListContainer/> */}
+    </div>
   );
 }
 

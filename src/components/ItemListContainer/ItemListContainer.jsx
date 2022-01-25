@@ -1,16 +1,34 @@
-import React from 'react'
-import ItemCount from '../ItemCount/ItemCount'
+import React, {useEffect, useState} from "react"
+import Loading from "../Loading/Loading"
+import ItemList from "../ItemList/ItemList"
+import data from './../../data/products.json'
 
-const ItemListContainer = ({greeting, arrayProductos, inicial}) => {
+export default function ItemListContainer ({greeting}) {
 
-    
+    const traerProductos = async () =>{
+        
+        setTimeout(()=>{
+            setProductos(data)
+        },2000)
+    }
 
-    return (
-        <>
-            <h2> {greeting} </h2>
-            {arrayProductos.map(item => <ItemCount stock={item.stock} nombre={item.nombre} inicial={inicial} />)}
-        </>
+    const [productos, setProductos] = useState([])
+
+    useEffect( ()=> {
+        traerProductos()
+    }, [])
+
+    return(
+        <div>
+            {
+                (productos.length > 0) ? 
+                    <>
+                        <h3 className='greeting'>{greeting}</h3>
+                        <ItemList products={productos} />
+                    </>
+                :
+                    <Loading />
+            }
+        </div>
     )
 }
-
-export default ItemListContainer

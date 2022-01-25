@@ -1,31 +1,32 @@
+import React from "react";
+import { Nav, Navbar, Container } from "react-bootstrap";
 import './NavBar.css'
-import CartWidget from '../CartWidget/CartWidget'
-import { Navbar, Nav, Container } from 'react-bootstrap'
+import NavDropDown from "../NavDropDown/NavDropDown"
+import CartWidget from "../CartWidget/CartWidget";
 
-const NavBar = ({ data }) => {
-	return (
-		<>
-			<Navbar bg='dark' expand='lg'  variant="dark">
-				<Container>
-					<Navbar.Brand href='#home'>Clothing Street</Navbar.Brand>
-					<Navbar.Toggle aria-controls='basic-navbar-nav' />
-					<Navbar.Collapse id='basic-navbar-nav'>
-						<Nav className='me-auto'>
-							{data.map((item) => {
-                                return <Nav.Link href={item.enlace}>{ item.nombre}</Nav.Link>
-							})}
-						</Nav>
-                        <Nav className="justify-content-end">
-                            <CartWidget/>
-                        </Nav>
-					</Navbar.Collapse>
-                    
-				</Container>
-                
-			</Navbar>
-		</>
-	)
+export default function NavBar() {
+
+  const items = [
+    { name : 'Remeras', link : '/remeras'},
+    { name : 'Hoodie', link : '/hoodie'},
+    { name : 'Pantalones', link : '/pantalones'},
+	{ name : 'Camperas', link : '/camperas'}
+  ]
+
+  return (
+    <Navbar className=" navbar-dark bg-dark" >
+      <Container>
+        <Navbar.Brand className='titulo'>Street Clothing</Navbar.Brand>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <Navbar.Collapse id="basic-navbar-nav" style={{marginLeft : '15%'}}>
+              <Nav className="me-auto letra" navbarScroll>
+                <Nav.Link href="/home">Inicio</Nav.Link>
+                <NavDropDown title='Productos' items={items} />
+                   <Nav.Link href="/contacto">Contacto</Nav.Link>
+              </Nav>
+            </Navbar.Collapse>
+        <CartWidget/>
+      </Container>
+    </Navbar>
+  );
 }
-export default NavBar
-
-   

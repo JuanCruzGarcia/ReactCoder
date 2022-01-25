@@ -1,0 +1,22 @@
+.delineado{
+  border : #55f6fc 2px solid !important;
+  border-radius: 5px;
+}
+
+.counter{
+  width: 100px; 
+}
+.ancho-counter{
+  margin:10px;
+  width: 180px;
+}
+
+.card{
+  width : 250px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  box-shadow: none;
+  border:none;
+}
