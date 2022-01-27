@@ -15,6 +15,7 @@ export default function Item({ item }) {
                      {price} U$D <br/>
                     {description}
                 </Card.Text>
+                {/* Este button me tiene que redireccionar al itendetailcontainer */}
                 <Button variant="primary">Ver Producto</Button>
             </Card.Body>
         </Card>

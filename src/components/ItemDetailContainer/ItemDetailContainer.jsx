@@ -9,7 +9,7 @@ export default function ItemDetailContainer() {
         
         setTimeout(()=>{
             //Muestro solo el primer producto para la entrega del desafio 7
-            const primerProducto = data[0]
+            const primerProducto = data[1]
             setProducto(primerProducto)
         },2000)
     }

@@ -4,7 +4,9 @@ import carrito from "./carrito.png"
 const CartWidget = () => {
     return (
         <div className="">
-            <img src={carrito} alt=""/>
+            <a href="/carrito">
+            <img src={carrito} alt="" />
+            </a>
         </div>
     )
 }
