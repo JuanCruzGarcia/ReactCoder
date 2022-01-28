@@ -1,3 +1,8 @@
+# Creacion de Ecommerce basado en un tienda de ropa 
+
+Proyecto creado para el curso de React de Coderhouse utilizando lo aprendido clase a clase como por ejemplo: componentes, hooks, rutas y navegación con react-router-dom. El estilo de la pagina esta creado con bootstrap y modificando pequeñas cosas desde CSS.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

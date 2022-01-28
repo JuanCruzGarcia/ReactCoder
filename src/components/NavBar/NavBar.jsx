@@ -3,27 +3,25 @@ import { Nav, Navbar, Container } from "react-bootstrap";
 import './NavBar.css'
 import NavDropDown from "../NavDropDown/NavDropDown"
 import CartWidget from "../CartWidget/CartWidget";
-import {BrowserRouter, Switch, Route, useParams, Link, NavLink} from "react-router-dom"
+import categorias from "../../data/categorias.json"
+import {NavLink} from "react-router-dom"
 
 export default function NavBar() {
-
-  const items = [
-    { name : 'Remeras', link : '/remeras'},
-    { name : 'Hoodie', link : '/hoodie'},
-    { name : 'Pantalones', link : '/pantalones'},
-	{ name : 'Camperas', link : '/camperas'}
-  ]
 
   return (
     <Navbar className=" navbar-dark bg-dark" >
       <Container>
-        <Navbar.Brand className='titulo' href="/home">Street Clothing</Navbar.Brand>
+        <Navbar.Brand className='titulo' href="/">Street Clothing</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav" style={{marginLeft : '15%'}}>
-              <Nav className="me-auto letra" navbarScroll>
-                <Nav.Link href="/home">Inicio</Nav.Link>
-                <NavDropDown title='Productos' items={items} />
-                   <Nav.Link href="/contacto">Contacto</Nav.Link>
+              <Nav className="me-auto" navbarScroll>
+                <Nav.Link> 
+                  <NavLink to={'/'} className='link'>Inicio</NavLink>
+                </Nav.Link>
+                <NavDropDown title='Productos' categorias={categorias} />
+                  <Nav.Link>
+                    <NavLink to={'/contacto'} className='link'> Contacto</NavLink>
+                  </Nav.Link>
               </Nav>
             </Navbar.Collapse>
             <CartWidget/> 

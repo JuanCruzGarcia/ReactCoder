@@ -3,7 +3,7 @@
         "id" : "000",
         "title" : "Remera Overzide",
         "price" : "80",
-        "category" : "remera",
+        "category" : "remeras",
         "description" : "Remera Overzide Fear of God Essentials",
         "image" : "https://images.stockx.com/images/Fear-of-God-Essentials-Core-Collection-T-shirt-Stretch-Limo.jpg?fit=fill&bg=FFFFFF&w=480&h=320&auto=compress&q=90&dpr=1&trim=color&updated_at=1639003330&fm=webp",
         "initial" : 1,
@@ -13,7 +13,7 @@
         "id" : "001",
         "title" : "Hoodie Overzide",
         "price" : "100",
-        "category" : "hoodie",
+        "category" : "hoodies",
         "description" : "Hoodie Fear of God Essentials",
         "image" : "https://images.stockx.com/images/Fear-of-God-Essentials-Core-Collection-Pullover-Hoodie-Dark-Heather-Oatmeal.jpg?fit=fill&bg=FFFFFF&w=480&h=320&auto=compress&q=90&dpr=1&trim=color&updated_at=1639003324&fm=webp",
         "initial" : 1,
@@ -21,9 +21,9 @@
     },
     {
         "id" : "002",
-        "title" : "Pantalon",
+        "title" : "Pantalon Street",
         "price" : "150",
-        "category" : "pantalon",
+        "category" : "pantalones",
         "description" : "Pantalon Fear of God Essentials",
         "image" : "https://images.stockx.com/images/Fear-of-God-Essentials-Core-Collection-Kids-Sweatpant-String.jpg?fit=fill&bg=FFFFFF&w=480&h=320&auto=compress&q=90&dpr=1&trim=color&updated_at=1639004838&fm=webp",
         "initial" : 1,
@@ -33,10 +33,50 @@
         "id" : "003",
         "title" : "Campera Supreme",
         "price" : "600",
-        "category" : "campera",
+        "category" : "camperas",
         "description" : "Supreme The North Face",
         "image" : "https://images.stockx.com/images/Supreme-The-North-Face-Bleached-Denim-Print-Nuptse-Jacket-Black.jpg?fit=fill&bg=FFFFFF&w=480&h=320&auto=compress&q=90&dpr=1&trim=color&updated_at=1639681104&fm=webp",
         "initial" : 1,
         "stock" : 5
+    },
+    {
+        "id" : "004",
+        "title" : "Pantalon Street",
+        "price" : "150",
+        "category" : "pantalones",
+        "description" : "Nike x Stussy International",
+        "image" : "https://images.stockx.com/images/Nike-x-Stussy-International-Sweatpants-Black.jpg?fit=fill&bg=FFFFFF&w=480&h=320&auto=compress&q=90&dpr=1&trim=color&updated_at=1613145175&fm=webp",
+        "initial" : 1,
+        "stock" : 7
+    },
+    {
+        "id" : "005",
+        "title" : "Hoodie Gucci",
+        "price" : "1.000",
+        "category" : "hoodies",
+        "description" : "Gucci x The North Face",
+        "image" : "https://images.stockx.com/images/Gucci-x-The-North-Face-Sweatshirt-Black.jpg?fit=fill&bg=FFFFFF&w=480&h=320&auto=compress&q=90&dpr=1&trim=color&updated_at=1638835149&fm=webp",
+        "initial" : 1,
+        "stock" : 2
+    },
+    {
+        "id" : "006",
+        "title" : "Remera",
+        "price" : "50",
+        "category" : "remeras",
+        "description" : "Travis Scott x McDonald's Fry II",
+        "image" : "https://images.stockx.com/images/Travis-Scott-x-McDonalds-Fry-II-T-Shirt-Brown.jpg?fit=fill&bg=FFFFFF&w=480&h=320&auto=compress&q=90&dpr=1&trim=color&updated_at=1606346571&fm=webp",
+        "initial" : 1,
+        "stock" : 3
+    },
+    {
+        "id" : "007",
+        "title" : "Campera Gucci",
+        "price" : "3.000",
+        "category" : "camperas",
+        "description" : "Gucci x The North Face Padded",
+        "image" : "https://images.stockx.com/images/Gucci-x-The-North-Face-Padded-Jacket-Yellow.jpg?fit=fill&bg=FFFFFF&w=480&h=320&auto=compress&q=90&dpr=1&trim=color&updated_at=1638835130&fm=webp",
+        "initial" : 1,
+        "stock" : 2
     }
 ]

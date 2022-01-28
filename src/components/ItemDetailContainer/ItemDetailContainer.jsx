@@ -2,34 +2,38 @@ import React, {useEffect, useState} from 'react';
 import ItemDetail from '../ItemDetail/ItemDetail';
 import Loading from '../Loading/Loading';
 import data from './../../data/products.json'
+import { useParams } from 'react-router';
 
 export default function ItemDetailContainer() {
 
-    const traerProducto = async () =>{
-        
-        setTimeout(()=>{
-            //Muestro solo el primer producto para la entrega del desafio 7
-            const primerProducto = data[1]
-            setProducto(primerProducto)
-        },2000)
-    }
+const {itemId} = useParams()
 
-    const [producto, setProducto] = useState({})
+const traerProducto = async () =>{
+    
+    setTimeout(()=>{
 
-    useEffect( ()=> {
-        traerProducto()
-    }, [])
+        const miProducto = data.find(item => item.id === itemId)
+        setProducto(miProducto)
 
-    return (
-        <div>
-            {
-                (producto.id) ?
-                
-                <ItemDetail item={producto}/>
-                :
-                <Loading />
-            }
+    } , 2000)
+}
+
+const [producto, setProducto] = useState([])
+
+useEffect( ()=> {
+    traerProducto()
+}, [itemId])
+
+return (
+    <div>
+        {
+            (producto.id) ?
             
-        </div>
-  );
+            <ItemDetail item={producto}/>
+            :
+            <Loading />
+        }
+        
+    </div>
+);
 };

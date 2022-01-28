@@ -1,9 +1,9 @@
 import React, {useState} from 'react'
-import {Button, ButtonGroup} from 'react-bootstrap'
 import swall from "sweetalert"
+import {Button, ButtonGroup} from 'react-bootstrap'
 import './ItemCount.css'
 
-const ItemCount = ({initial, stock}) => {
+const ItemCount = ({initial, stock, onAdd}) => {
 
     const [counter, setCounter] = useState(initial)
 
@@ -20,12 +20,7 @@ const ItemCount = ({initial, stock}) => {
             setCounter(counter - 1)
         }
     }
-
-    function onAdd(){
-        swall(`Se han agregado correctamente 
-            ${counter} items al carrito`)
-    }
-
+    
     return (
         <div className='card'>
                 <ButtonGroup className='delineado ancho-counter'>
@@ -40,3 +35,7 @@ const ItemCount = ({initial, stock}) => {
 }
 
 export default ItemCount
+
+
+
+ 

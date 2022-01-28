@@ -1,10 +1,12 @@
 import React from 'react';
 import { Button, Card } from 'react-bootstrap'
+import { NavLink } from 'react-router-dom';
 import './Item.css'
+
 
 export default function Item({ item }) {
 
-    const { title, price, description, image } = item
+    const { title, price, description, image, id } = item
 
     return (
         <Card className='card'>
@@ -16,7 +18,9 @@ export default function Item({ item }) {
                     {description}
                 </Card.Text>
                 {/* Este button me tiene que redireccionar al itendetailcontainer */}
-                <Button variant="primary">Ver Producto</Button>
+                <Button variant='primary'>
+                <NavLink to={`/item/${id}`} className='link'> Ver Producto</NavLink>
+                </Button>
             </Card.Body>
         </Card>
     

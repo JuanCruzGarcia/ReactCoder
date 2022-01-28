@@ -1,0 +1,6 @@
+[
+    { "name" : "remeras", "link" : "/remeras"},
+    { "name" : "pantalones", "link" : "/pantalones"},
+    { "name" : "hoodies", "link" : "/hoodies"},
+    { "name" : "camperas", "link" : "/camperas"}
+  ]

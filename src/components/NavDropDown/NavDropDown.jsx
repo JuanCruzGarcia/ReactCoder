@@ -1,12 +1,19 @@
 import {NavDropdown} from 'react-bootstrap'
+import { NavLink } from 'react-router-dom'
+import './NavDropDown.css'
 
-export default function NavDropDown ({title, items}){
+export default function NavDropDown ({title,categorias}){
     return (
-        <NavDropdown title={title} id="basic-nav-dropdown">
+        <NavDropdown title={title} id="basic-nav-dropdown" className='link'>
             {
-                items.map( item =>
+                categorias.map( category =>
                     <>
-                    <NavDropdown.Item href={item.link}>{item.name}</NavDropdown.Item>
+                    <NavDropdown.Item href={'/category' + category.link}>
+                        <NavLink to={'/category' + category.link} className='linksCategoria'>
+                            {category.name}
+                        </NavLink>
+                    </NavDropdown.Item>
+
                     <NavDropdown.Divider />
                     </>
                 )
@@ -14,3 +21,7 @@ export default function NavDropDown ({title, items}){
         </NavDropdown>
     )
 }
+
+
+
+    

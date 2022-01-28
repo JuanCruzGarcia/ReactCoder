@@ -41,3 +41,12 @@
 .titulos{
   text-align: center;
 }
+ .link{
+    text-decoration: none;
+    color: white;
+
+ }
+
+ .link:hover{
+   color: white;
+ }
