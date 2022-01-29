@@ -18,8 +18,8 @@ export default function Item({ item }) {
                     {description}
                 </Card.Text>
                 {/* Este button me tiene que redireccionar al itendetailcontainer */}
-                <Button variant='primary'>
-                <NavLink to={`/item/${id}`} className='link'> Ver Producto</NavLink>
+                <Button>
+                <NavLink to={`/item/${id}`}> Ver Producto</NavLink>
                 </Button>
             </Card.Body>
         </Card>

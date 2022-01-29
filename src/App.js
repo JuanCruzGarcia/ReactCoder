@@ -13,7 +13,7 @@ function App() {
         <NavBar/>
           <Switch>
             <Route exact path="/">
-              <h2 className="titulos">Bienvenidos a Clothing Street</h2>
+              <h2 className="titulos">Bienvenidos a Street Clothing </h2>
               <ItemListContainer/>
             </Route>         
             <Route path='/category/:categoryName'>

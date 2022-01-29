@@ -15,3 +15,14 @@
     cursor: pointer;
     transition: transform 200ms ease-in;
   }
+
+  .btn-primary{
+    background-color: black !important;
+    border-color: black !important;
+    
+  }
+
+  .btn-primary a {
+    color: white;
+    text-decoration: none;
+  }

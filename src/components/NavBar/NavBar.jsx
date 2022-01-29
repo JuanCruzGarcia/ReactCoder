@@ -11,7 +11,7 @@ export default function NavBar() {
   return (
     <Navbar className=" navbar-dark bg-dark" >
       <Container>
-        <Navbar.Brand className='titulo' href="/">Street Clothing</Navbar.Brand>
+        <Navbar.Brand  href="/">Street Clothing</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav" style={{marginLeft : '15%'}}>
               <Nav className="me-auto" navbarScroll>
