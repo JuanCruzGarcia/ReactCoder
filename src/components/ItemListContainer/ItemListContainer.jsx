@@ -20,6 +20,10 @@ export default function ItemListContainer ({greeting}) {
             setProductos(misProductos)         
         })
 
+        .catch((err) =>{
+            setProductos(err)
+        })
+
     }, [categoryName])
 
     return(
