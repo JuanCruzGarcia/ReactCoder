@@ -13,14 +13,14 @@ export default function ItemListContainer ({greeting}) {
         const products = new Promise( resolve => {
             setTimeout(() => resolve(data), 2000)
         })
-        .then(res => {
+        products.then(res => {
             const misProductos = (categoryName) ?  
                 res.filter(item => item.category === categoryName) : res
             
             setProductos(misProductos)         
         })
 
-        .catch((err) =>{
+        products.catch((err) =>{
             setProductos(err)
         })
         

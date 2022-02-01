@@ -7,21 +7,26 @@ import { useParams } from 'react-router';
 export default function ItemDetailContainer() {
 
 const {itemId} = useParams()
+const [producto, setProducto] = useState([]);
 
-const traerProducto = async () =>{
+useEffect(() =>{
+
+    const getItem = new Promise ((resolve) => {
     
-    setTimeout(()=>{
+        setTimeout(() => {
+            let miProducto = data.find(item => item.id === itemId)
+            resolve (miProducto)
+        }, 2000)
+    });
 
-        const miProducto = data.find(item => item.id === itemId)
-        setProducto(miProducto)
+    getItem.then((res) => {
+        setProducto(res)
+    })
 
-    } , 2000)
-}
+    getItem.catch((err) =>{
+        setProducto(err)
+    })
 
-const [producto, setProducto] = useState([])
-
-useEffect( ()=> {
-    traerProducto()
 }, [itemId])
 
 return (
