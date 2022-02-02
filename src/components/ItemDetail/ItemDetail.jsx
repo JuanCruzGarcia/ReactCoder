@@ -1,17 +1,23 @@
 import React from 'react';
-import swall from "sweetalert"
-import { Col, Row, Image, Container } from 'react-bootstrap';
+import { Col, Row, Image, Container, Button } from 'react-bootstrap';
+import { useState } from "react";
 import ItemCount from './../ItemCount/ItemCount'
 import './ItemDetail.css'
+import {NavLink} from "react-router-dom"
 
 export default function ItemDetail({ item }) {
 
+  
+
     const { title, price, description, image, initial, stock } = item
 
-    function onAdd(counter){
-        swall(`Se han agregado correctamente 
-            ${counter} items al carrito`)
-    }
+    const [quantity, setQuantity] = useState(null) 
+    const [buttonCount, setButtonCount] = useState(true)
+
+    function onAdd(quantity) {
+        setQuantity(quantity);
+        setButtonCount(false);
+      }
 
     return (
         <Container fluid style={{display:'grid'}}>
@@ -31,8 +37,24 @@ export default function ItemDetail({ item }) {
                         :
                         <></>
                     }
+                    {
+                    buttonCount ? 
+                    (
+                    <ItemCount className='margin' initial={initial} stock={stock} onAdd={onAdd}/> 
+                    ) :(
+                        <>
+    
+                    <NavLink to={"/carrito"}>
+                        <Button> Ver {quantity} productos </Button> 
+                    </NavLink> <br/>
+                    <NavLink to={"/"}>
+                        <Button >Seguir comprando</Button>
+                    </NavLink>
+                    </>
+                      )
+                        
+                    }
                     
-                    <ItemCount className='margin' initial={initial} stock={stock} onAdd={onAdd}/>
                 </Col>
 
             </Row>
@@ -40,3 +62,5 @@ export default function ItemDetail({ item }) {
         </Container>
     );
 };
+
+                  
