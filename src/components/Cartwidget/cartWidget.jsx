@@ -10,12 +10,12 @@ export default function CartWidget(){
 
 
     return (
-        <div className='cart'>
+        
             <NavLink to={'/carrito'}> 
                 <img src={carrito} alt="carrito"/>
                 <span>0</span>
                 <span>{total}</span>
             </NavLink>
-        </div>
+       
     )
 }
