@@ -1,22 +1,21 @@
-import React from 'react';
+import { useContext, useState } from "react";
 import { Col, Row, Image, Container, Button } from 'react-bootstrap';
-import { useState } from "react";
 import ItemCount from './../ItemCount/ItemCount'
 import './ItemDetail.css'
 import {NavLink} from "react-router-dom"
+import { context } from '../../context/CartProvider';
+
 
 export default function ItemDetail({ item }) {
 
-  
-
+    const {addToCart} = useContext(context)
     const { title, price, description, image, initial, stock } = item
-
-    const [quantity, setQuantity] = useState(null) 
-    const [buttonCount, setButtonCount] = useState(true)
+    const [added, setAdded] = useState(null)
+     
 
     function onAdd(quantity) {
-        setQuantity(quantity);
-        setButtonCount(false);
+        addToCart(item, quantity)
+        setAdded(quantity)
       }
 
     return (
@@ -38,7 +37,7 @@ export default function ItemDetail({ item }) {
                         <></>
                     }
                     {
-                    buttonCount ? 
+                    added ? 
                     (
                     <ItemCount className='margin' initial={initial} stock={stock} onAdd={onAdd}/> 
                     ) :(
@@ -48,7 +47,7 @@ export default function ItemDetail({ item }) {
                         <Button> Ver {quantity} productos </Button> 
                     </NavLink> <br/>
                     <NavLink to={"/"}>
-                        <Button >Seguir comprando</Button>
+                        <Button className='botonesEspacio'>Seguir comprando</Button>
                     </NavLink>
                     </>
                       )
