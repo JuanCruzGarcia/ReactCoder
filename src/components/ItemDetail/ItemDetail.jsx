@@ -10,12 +10,12 @@ export default function ItemDetail({ item }) {
 
     const {addToCart} = useContext(context)
     const { title, price, description, image, initial, stock } = item
-    const [added, setAdded] = useState(null)
+    const [added, setAdded] = useState(true)
      
 
-    function onAdd(quantity) {
-        addToCart(item, quantity)
-        setAdded(quantity)
+    function onAdd(counter) {
+            addToCart(item, counter)
+            setAdded(false)
       }
 
     return (
@@ -44,7 +44,7 @@ export default function ItemDetail({ item }) {
                         <>
     
                     <NavLink to={"/carrito"}>
-                        <Button> Ver {quantity} productos </Button> 
+                        <Button>Ir al carrito</Button> 
                     </NavLink> <br/>
                     <NavLink to={"/"}>
                         <Button className='botonesEspacio'>Seguir comprando</Button>

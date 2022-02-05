@@ -1,11 +1,10 @@
 import React, {useContext} from 'react';
 import { context } from '../../context/CartProvider';
-import CartItem from '../CartItem/CartItem';
 import {Button} from 'react-bootstrap'
 import { NavLink } from 'react-router-dom';
-
+import CartItem from './CartItem/CartItem';
 export default function Cart() {
-  
+
   const {cart, cleanCart} = useContext(context)
 
   return (
@@ -20,16 +19,12 @@ export default function Cart() {
           :
           <>
             <h2 style={{margin:'3%'}}>Tu Carrito</h2> 
-            {
-              cart.map(item => <CartItem product={item.product} quantity={item.quantity} key={item.product.id}/>)
-            }
+            {cart.map(item => <CartItem product={item.product} quantity={item.quantity} key={item.product.id}/>)}
             <Button variant='danger' onClick={()=>cleanCart()} style={{margin:'3%'}}>
               Vaciar Carrito
             </Button>
           </>
       }
-
-
     </div>
     );
 };

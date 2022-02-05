@@ -33,7 +33,7 @@ function App() {
               </Route>
             </Switch>
           </BrowserRouter>
-          </CartProvider>
+        </CartProvider>
     </div>
    
   );

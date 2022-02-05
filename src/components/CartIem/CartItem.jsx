@@ -1,7 +1,7 @@
 import React, {useContext} from 'react';
 import {Button, ButtonGroup} from 'react-bootstrap'
 import { context } from '../../context/CartProvider';
-import './CartItem.css'
+
 
 export default function CartItem({product, quantity}) {
 
