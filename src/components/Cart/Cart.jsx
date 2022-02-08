@@ -2,7 +2,7 @@ import React, {useContext} from 'react';
 import { context } from '../../context/CartProvider';
 import {Button} from 'react-bootstrap'
 import { NavLink } from 'react-router-dom';
-import CartItem from './CartItem/CartItem';
+import CartItem from '../CartItem/CartItem';
 export default function Cart() {
 
   const {cart, cleanCart} = useContext(context)
