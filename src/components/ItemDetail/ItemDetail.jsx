@@ -44,7 +44,7 @@ export default function ItemDetail({ item }) {
                         <>
     
                     <NavLink to={"/carrito"}>
-                        <Button>Ir al carrito</Button> 
+                        <Button>Finalizar Compra</Button> 
                     </NavLink> <br/>
                     <NavLink to={"/"}>
                         <Button className='botonesEspacio'>Seguir comprando</Button>
