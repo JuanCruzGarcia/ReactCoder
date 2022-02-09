@@ -34,7 +34,9 @@ export default function CartProvider ({children}){
         setCart([])
         setTotal(0)
     }
-
+    const totalPrice = () => {
+        return cart.reduce( (acumulador, item) => acumulador + (item.product.price * item.quantity),0 )
+    }
     const oneItemMore = (id) => {
         const indexItem = cart.findIndex(element => element.product.id === id)
         const item = cart[indexItem]
@@ -58,7 +60,7 @@ export default function CartProvider ({children}){
 
     return (
         <context.Provider 
-            value={{cart, addToCart, deleteFromCart, cleanCart, oneItemMore, oneItemLess, total}}>
+            value={{cart, addToCart, deleteFromCart, cleanCart, oneItemMore, oneItemLess, total, totalPrice}}>
             {children}
         </context.Provider>
     );

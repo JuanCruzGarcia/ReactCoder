@@ -11,9 +11,9 @@ export default function CartWidget(){
 
     return (
         <div>
-            <NavLink to={'/carrito'}> 
+            <NavLink to={'/carrito'} className="cart"> 
                 <img src={carrito} alt="carrito"/>
-                <span>{total}</span>
+                <span>{total !== 0 ? total : ''}</span>
             </NavLink>
         </div>
     )
