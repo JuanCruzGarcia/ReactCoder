@@ -52,7 +52,7 @@
     {
         "id" : "005",
         "title" : "Hoodie Gucci",
-        "price" : "1.000",
+        "price" : "1000",
         "category" : "hoodies",
         "description" : "Gucci x The North Face",
         "image" : "https://images.stockx.com/images/Gucci-x-The-North-Face-Sweatshirt-Black.jpg?fit=fill&bg=FFFFFF&w=480&h=320&auto=compress&q=90&dpr=1&trim=color&updated_at=1638835149&fm=webp",
@@ -72,7 +72,7 @@
     {
         "id" : "007",
         "title" : "Campera Gucci",
-        "price" : "3.000",
+        "price" : "3000",
         "category" : "camperas",
         "description" : "Gucci x The North Face Padded",
         "image" : "https://images.stockx.com/images/Gucci-x-The-North-Face-Padded-Jacket-Yellow.jpg?fit=fill&bg=FFFFFF&w=480&h=320&auto=compress&q=90&dpr=1&trim=color&updated_at=1638835130&fm=webp",

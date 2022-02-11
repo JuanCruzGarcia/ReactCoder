@@ -1,30 +1,31 @@
 import React, {useEffect, useState} from 'react';
 import ItemDetail from '../ItemDetail/ItemDetail';
 import Loading from '../Loading/Loading';
-import data from './../../data/products.json'
 import { useParams } from 'react-router';
+import {getFirestore} from "../../Firebase/Firebase";
 
 export default function ItemDetailContainer() {
 
 const {itemId} = useParams()
-const [producto, setProducto] = useState([]);
+const [products, setProducts] = useState([])
 
 useEffect(() =>{
-
-    const getItem = new Promise ((resolve) => {
+    const db = getFirestore();
+    const itemList = db.collection("products")
+    const producto = itemList.doc(itemId)
     
-        setTimeout(() => {
-            let miProducto = data.find(item => item.id === itemId)
-            resolve (miProducto)
-        }, 2000)
-    });
+    producto.get()
+    .then((doc) => {
+        if(!doc.exists) {
+            console.log("No existe el producto")
+            return
+        }
 
-    getItem.then((res) => {
-        setProducto(res)
+        setProducts({id: doc.id, ...doc.data()})
+        
     })
-
-    getItem.catch((err) =>{
-        setProducto(err)
+    .catch((err) =>{
+        console.log(err)
     })
 
 }, [itemId])
@@ -32,9 +33,9 @@ useEffect(() =>{
 return (
     <div>
         {
-            (producto.id) ?
+            (products.id) ?
             
-            <ItemDetail item={producto}/>
+            <ItemDetail item={products}/>
             :
             <Loading />
         }
