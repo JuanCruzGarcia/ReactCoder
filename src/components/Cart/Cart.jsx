@@ -20,10 +20,17 @@ export default function Cart() {
           <>
             <h2 style={{margin:'3%'}}>Tu Carrito</h2> 
             {cart.map(item => <CartItem product={item.product} price={item.product.price} quantity={item.quantity} key={item.product.id}/>)}
+            <h3 style={{margin:'2%'}}>Total: U$D {totalPrice()}</h3>
+            
             <Button variant='danger' onClick={()=>cleanCart()} style={{margin:'3%'}}>
               Vaciar Carrito
             </Button>
-            <h3 style={{margin:'2%'}}>Total: U$D {totalPrice()}</h3>
+            
+            <NavLink to={"/formCompra"}>
+                        <Button variant="dark">
+                          Finalizar Compra
+                        </Button>
+            </NavLink>
           </>
       }
     </div>
