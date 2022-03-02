@@ -10,12 +10,12 @@ export default function Item({ item }) {
 
     return (
         <Card className='card'>
-            <Card.Img variant="top" src={image}/>
-            <Card.Body>
-                <Card.Title className='padding'>{title}</Card.Title>
-                <Card.Text className='padding'>
-                     {price} U$D <br/>
-                    {description}
+            <Card.Img className='Body' variant="top" src={image} />
+            <Card.Body className='Body'>
+                <Card.Title className=''>{title}</Card.Title>
+                <Card.Text className=''>
+                    <h5> {price} U$D </h5><br/>
+                    <p>{description}</p>
                 </Card.Text>
                 {/* Este button me tiene que redireccionar al itendetailcontainer */}
                 <Button>
@@ -26,3 +26,4 @@ export default function Item({ item }) {
     
     );
 };
+

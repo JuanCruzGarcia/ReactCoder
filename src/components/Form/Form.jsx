@@ -49,7 +49,7 @@ export default function Form() {
 
         ordenesDeCompra.add(nuevaOrdenDeCompra)
             .then(({ id }) => {
-                console.log("Orden generada: " + id)
+                console.log("Orden: " + id)
                 setOrdenId(id)
             })
             .catch((err) => {
@@ -84,13 +84,15 @@ export default function Form() {
                     
                     <br />
                     <Button onClick={() => finalizarCompra()}> Finalizar Compra </Button>
+                    
                 </div>
                 :
-                <div>
-                    <h2>Su código de compra es: </h2>
-                    <br />
-                    <p>{ordenId}</p>
-                </div>
+                    <div className="code"> 
+                        <h2>Su código de compra es: </h2>
+                        <br />
+                        <p>{ordenId}</p>                        
+                    </div>
+                
             }
 
         </>

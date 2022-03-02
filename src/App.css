@@ -15,7 +15,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #505050;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -51,4 +51,40 @@
    color: white;
  }
 
- 
+.imgPrincipal{
+  background-size: cover;
+  max-width: 100%;
+  filter: opacity(80%);
+}
+
+
+.logoPrincipal{
+  
+  max-width: 50%;
+}
+
+.separacion{
+  padding-bottom: 30px;
+}
+
+.fondo{
+  background-color: #212529;
+  padding-bottom: 30px;
+
+}
+
+.este{
+  background-color: white;
+}
+
+.este p{
+  margin-bottom: 0cm !important;
+}
+ .wave{
+  width: 100%;
+ }
+
+ .fondoID{
+  background-color: #1e1f22;
+  height: 83.3vh;
+}

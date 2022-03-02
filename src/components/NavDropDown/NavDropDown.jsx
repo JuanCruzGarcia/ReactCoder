@@ -13,7 +13,6 @@ export default function NavDropDown ({title,categorias}){
                             {category.name}
                         </NavLink>
                     </NavDropdown.Item>
-
                     <NavDropdown.Divider />
                     </>
                 )

@@ -37,7 +37,6 @@ export default function ItemListContainer ({greeting}) {
             {
                 (products.length > 0) ? 
                     <>
-                        <p className='greeting'>{greeting}</p>
                         <ItemList products={products} />
                     </>
                 :

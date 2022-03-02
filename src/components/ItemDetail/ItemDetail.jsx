@@ -19,6 +19,7 @@ export default function ItemDetail({ item }) {
       }
 
     return (
+        <section className="jo">
         <Container fluid style={{display:'grid'}}>
 
             <Row className='row'>
@@ -59,6 +60,7 @@ export default function ItemDetail({ item }) {
             </Row>
 
         </Container>
+        </section>
     );
 };
 
