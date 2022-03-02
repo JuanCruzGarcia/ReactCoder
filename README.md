@@ -17,14 +17,18 @@ La aplicación debería estar corriendo en su navegador.
 
 # Navegacion por la Pagina
 
-# home
+home
+
 https://media.giphy.com/media/uvxCNKrGrGwhhIZQrR/giphy.gif
 
-# seleccion de productos
-<iframe src="https://giphy.com/embed/hktzKlye65IsZ4Wfab" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/hktzKlye65IsZ4Wfab">via GIPHY</a></p>
+seleccion de productos
 
-# carrito y formulario
-<iframe src="https://giphy.com/embed/hktzKlye65IsZ4Wfab" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/hktzKlye65IsZ4Wfab">via GIPHY</a></p>
+https://media.giphy.com/media/hktzKlye65IsZ4Wfab/giphy.gif
 
-# codigo de compra y navegacion 
-<iframe src="https://giphy.com/embed/sc5OL5h0sTXaQGdlmv" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/sc5OL5h0sTXaQGdlmv">via GIPHY</a></p>
+carrito y formulario
+
+https://media.giphy.com/media/20TAI1S972xwyPZfDW/giphy.gif
+
+codigo de compra y navegacion 
+
+https://media.giphy.com/media/sc5OL5h0sTXaQGdlmv/giphy.gif
