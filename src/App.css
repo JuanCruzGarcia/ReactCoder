@@ -87,9 +87,8 @@
  .fondoID{
   background-color: #1e1f22;
   height: 83.3vh;
-  
-
 }
+
 @media (max-width: 767px) {
   .fondoID{
     height: auto;}
